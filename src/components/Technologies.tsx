@@ -1,54 +1,62 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
+import wordpress from "@/assets/WordPress-Emblem.png"
+import react from "@/assets/react.png"
+import Python from "@/assets/python.png"
+import shopify from "@/assets/shopify.png"
+import php from "@/assets/php.png"
+import django from "@/assets/django.png"
+import html from "@/assets/html.png"
+import custom from "@/assets/custom.png"
 
 const technologies = [
   {
     name: "WordPress",
     number: "01",
     description: "WordPress is an open source software. It is publishing software with a focus on ease of speed, and a great user experience.",
-    icon: "🔷",
+    image: wordpress,
   },
   {
-    name: "Magento",
+    name: "Python",
     number: "02",
-    description: "Magento boasts a strong portfolio of cloud-based omni channel solutions including in-store, retail associate etc.",
-    icon: "🔶",
+    description: "Python is a versatile programming language ideal for rapid web development with extensive libraries like Flask and Django.",
+    image: Python,
   },
   {
-    name: "Joomla",
+    name: "React",
     number: "03",
-    description: "In today's highly competitive world, it has become necessary to have an impressive website so as to attract more customers.",
-    icon: "🟦",
+    description: "React is a powerful JavaScript library for building dynamic user interfaces make it efficient for creating responsive, high-performance web applications.",
+    image: react,
   },
   {
     name: "Shopify",
     number: "04",
     description: "Build your online store with Shopify's powerful e-commerce platform. Easy setup, beautiful themes, and robust features.",
-    icon: "🟩",
+    image: shopify,
   },
   {
     name: "PHP",
     number: "05",
     description: "PHP is a type of an open source programming language that is a very popular for developing web applications.",
-    icon: "🟣",
+    image: php,
   },
   {
-    name: ".NET",
+    name: "Django",
     number: "06",
-    description: "ASP.NET is a free, fully supported Web application framework that helps you create standards-based Web solutions.",
-    icon: "🔵",
+    description: "Django is a high-level Python web framework designed for rapid development of secure, database-driven websites.",
+    image: django,
   },
   {
     name: "HTML5",
     number: "07",
     description: "Our team is well versed with responsive designs using core techniques as well based on popular CSS frameworks.",
-    icon: "🟠",
+    image: html,
   },
   {
     name: "Custom Design",
     number: "08",
     description: "Our team is well versed with responsive designs using core techniques as well based on popular CSS frameworks.",
-    icon: "🎨",
+    image: custom,
   },
 ];
 
@@ -72,11 +80,20 @@ const Technologies = () => {
               className="group relative p-6 rounded-2xl bg-card border border-border hover:border-primary overflow-hidden transition-smooth hover:shadow-large"
             >
               <div className="absolute top-4 right-4 text-6xl opacity-5 group-hover:opacity-10 transition-smooth">
-                {tech.icon}
+                <img
+            src={tech.image}
+           style={{width:"100px"}}
+            className="w-full h-full object-cover"
+          />
               </div>
               <div className="relative">
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-5xl">{tech.icon}</span>
+                  {/* <span className="text-5xl">{tech.icon}</span> */}
+                  <img
+            src={tech.image}
+           style={{width:"100px"}}
+            className="w-full h-full object-cover"
+          />
                   <span className="text-sm font-mono text-muted-foreground">{tech.number}</span>
                 </div>
                 <h3 className="text-xl font-display font-semibold mb-3 group-hover:text-primary transition-smooth">

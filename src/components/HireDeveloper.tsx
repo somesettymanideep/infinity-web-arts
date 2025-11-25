@@ -27,9 +27,9 @@ const features = [
 const skills = [
   "PHP",
   "WordPress",
-  "Joomla",
-  "Magento",
-  "ASP.NET",
+  "Python",
+  "React",
+  "Django",
   "React",
   "Node.js",
   "Python",

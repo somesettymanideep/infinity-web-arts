@@ -131,7 +131,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold mb-1">Our Address</h3>
                       <p className="text-muted-foreground">
-                        123 Tech Street, Digital City, DC 12345
+                        No. 38, Jalan Pemberita U1/49, Temasya Industrial Park, Section U1, 40150 Shah Alam, Selangor Darul Ehsan, Malaysia
                       </p>
                     </div>
                   </div>
@@ -143,10 +143,10 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold mb-1">Phone Number</h3>
                       <a
-                        href="tel:+1234567890"
+                        href="tel:+60 11-3673 8213"
                         className="text-muted-foreground hover:text-primary transition-smooth"
                       >
-                        +1 (234) 567-890
+                        +60 11-3673 8213
                       </a>
                     </div>
                   </div>
@@ -158,10 +158,10 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold mb-1">Email Address</h3>
                       <a
-                        href="mailto:info@techserve.com"
+                        href="mailto:contact@stackitsoft.com"
                         className="text-muted-foreground hover:text-primary transition-smooth"
                       >
-                        info@techserve.com
+                        contact@stackitsoft.com
                       </a>
                     </div>
                   </div>
