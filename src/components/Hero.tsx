@@ -79,7 +79,7 @@ const Hero = () => {
               <Button size="lg" variant="secondary" className="shadow-large">
                 Get Started
               </Button>
-              <Button size="lg" variant="outline" className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10">
+              <Button size="lg" variant="secondary" className="shadow-large">
                 Learn More
               </Button>
             </div>

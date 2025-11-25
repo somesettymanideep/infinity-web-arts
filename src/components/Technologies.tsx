@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 import wordpress from "@/assets/WordPress-Emblem.png"
-import react from "@/assets/react.png"
+import react from "@/assets/react-new.png"
 import Python from "@/assets/python.png"
 import shopify from "@/assets/shopify.png"
 import php from "@/assets/php.png"
