@@ -72,18 +72,18 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-2 text-sm text-muted-foreground">
                 <MapPin className="w-4 h-4 mt-1 flex-shrink-0 text-primary" />
-                <span>123 Tech Street, Digital City, DC 12345</span>
+                <span>No. 38, Jalan Pemberita U1/49, Temasya Industrial Park, Section U1, 40150 Shah Alam, Selangor Darul Ehsan, Malaysia</span>
               </li>
               <li className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Phone className="w-4 h-4 flex-shrink-0 text-primary" />
                 <a href="tel:+1234567890" className="hover:text-primary transition-smooth">
-                  +1 (234) 567-890
+                 +60 11-3673 8213
                 </a>
               </li>
               <li className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Mail className="w-4 h-4 flex-shrink-0 text-primary" />
                 <a href="mailto:info@techserve.com" className="hover:text-primary transition-smooth">
-                  info@techserve.com
+                 contact@stackitsoft.com
                 </a>
               </li>
             </ul>
