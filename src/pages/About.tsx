@@ -12,7 +12,7 @@ const About = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-4xl md:text-6xl font-display font-bold mb-6">
-                About TechServe
+                About StackItSoft
               </h1>
               <p className="text-xl text-primary-foreground/90">
                 Your trusted partner in digital transformation and IT excellence
@@ -30,7 +30,7 @@ const About = () => {
               </h2>
               <div className="prose prose-lg max-w-none text-muted-foreground space-y-6">
                 <p>
-                  TechServe is a leading IT services company specializing in web design, web development, 
+                  StackItSoft is a leading IT services company specializing in web design, web development, 
                   digital marketing, SEO services, and e-commerce solutions. With over 10 years of 
                   experience in the industry, we have established ourselves as a trusted partner for 
                   businesses worldwide seeking to enhance their digital presence.
@@ -42,7 +42,7 @@ const About = () => {
                   results for our clients.
                 </p>
                 <p>
-                  At TechServe, we believe in building long-term partnerships with our clients. Our 
+                  At StackItSoft, we believe in building long-term partnerships with our clients. Our 
                   commitment to excellence, combined with competitive pricing and flexible engagement 
                   models, makes us the ideal choice for businesses of all sizes—from startups to 
                   established enterprises.
