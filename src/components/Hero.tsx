@@ -1,22 +1,28 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "./ui/button";
+import heroWebDesign from "@/assets/hero-web-design.jpg";
+import heroItServices from "@/assets/hero-it-services.jpg";
+import heroDigitalMarketing from "@/assets/hero-digital-marketing.jpg";
 
 const slides = [
   {
     title: "Transform Your Digital Presence",
     subtitle: "Expert Web Design & Development Solutions",
     description: "We create stunning, high-performance websites that drive results for your business",
+    image: heroWebDesign,
   },
   {
     title: "Innovative IT Services",
     subtitle: "Cutting-Edge Technology Solutions",
     description: "Harness the power of modern technologies to stay ahead of the competition",
+    image: heroItServices,
   },
   {
     title: "Grow Your Business Online",
     subtitle: "Digital Marketing & SEO Excellence",
     description: "Reach your target audience and maximize your online visibility",
+    image: heroDigitalMarketing,
   },
 ];
 
@@ -39,8 +45,23 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative h-[600px] md:h-[700px] overflow-hidden bg-gradient-to-br from-primary via-primary-light to-primary-dark">
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMzYgMzRjMC0yLjIxLTEuNzktNC00LTRzLTQgMS43OS00IDQgMS43OSA0IDQgNCA0LTEuNzkgNC00em0wLTEwYzAtMi4yMS0xLjc5LTQtNC00cy00IDEuNzktNCA0IDEuNzkgNCA0IDQgNC0xLjc5IDQtNHptMC0xMGMwLTIuMjEtMS43OS00LTQtNHMtNCAxLjc5LTQgNCAxLjc5IDQgNCA0IDQtMS43OSA0LTR6TTI0IDM0YzAtMi4yMS0xLjc5LTQtNC00cy00IDEuNzktNCA0IDEuNzkgNCA0IDQgNC0xLjc5IDQtNHptMC0xMGMwLTIuMjEtMS43OS00LTQtNHMtNCAxLjc5LTQgNCAxLjc5IDQgNCA0IDQtMS43OSA0LTR6bTAtMTBjMC0yLjIxLTEuNzktNC00LTRzLTQgMS43OS00IDQgMS43OSA0IDQgNCA0LTEuNzkgNC00ek0xMiAzNGMwLTIuMjEtMS43OS00LTQtNHMtNCAxLjc5LTQgNCAxLjc5IDQgNCA0IDQtMS43OSA0LTR6bTAtMTBjMC0yLjIxLTEuNzktNC00LTRzLTQgMS43OS00IDQgMS43OSA0IDQgNCA0LTEuNzkgNC00em0wLTEwYzAtMi4yMS0xLjc5LTQtNC00cy00IDEuNzktNCA0IDEuNzkgNCA0IDQgNC0xLjc5IDQtNHoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-30"></div>
+    <section className="relative h-[600px] md:h-[700px] overflow-hidden">
+      {/* Background Images */}
+      {slides.map((slide, index) => (
+        <div
+          key={index}
+          className={`absolute inset-0 transition-opacity duration-1000 ${
+            currentSlide === index ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          <img
+            src={slide.image}
+            alt={slide.title}
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-primary/50"></div>
+        </div>
+      ))}
       
       <div className="container mx-auto px-4 h-full relative z-10">
         <div className="h-full flex items-center">
