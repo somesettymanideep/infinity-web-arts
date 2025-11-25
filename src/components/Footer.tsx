@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Code2, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -8,11 +9,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                <Code2 className="w-6 h-6 text-primary-foreground" />
-              </div>
-              <span className="text-xl font-display font-bold">TechServe</span>
+            <div className="mb-4">
+              <img 
+                src={logo} 
+                alt="StackItSoft Logo" 
+                className="h-10"
+              />
             </div>
             <p className="text-muted-foreground text-sm mb-4">
               Delivering innovative IT solutions and web services worldwide. Your success is our mission.
@@ -89,7 +91,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} TechServe. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} StackItSoft. All rights reserved.</p>
         </div>
       </div>
     </footer>
