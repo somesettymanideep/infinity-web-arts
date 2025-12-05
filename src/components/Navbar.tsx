@@ -64,7 +64,7 @@ const Navbar = () => {
             
             {/* Services Dropdown */}
             <div 
-              className="relative"
+              className="relative group"
               onMouseEnter={() => setServicesOpen(true)}
               onMouseLeave={() => setServicesOpen(false)}
             >
@@ -78,18 +78,21 @@ const Navbar = () => {
               </button>
               
               {servicesOpen && (
-                <div className="absolute top-full left-0 mt-2 w-56 bg-background border border-border rounded-xl shadow-large py-2 animate-fade-in">
-                  {services.map((service) => (
-                    <Link
-                      key={service.path}
-                      to={service.path}
-                      className={`block px-4 py-2 text-sm transition-smooth hover:bg-secondary hover:text-primary ${
-                        location.pathname === service.path ? "text-primary bg-secondary" : "text-muted-foreground"
-                      }`}
-                    >
-                      {service.name}
-                    </Link>
-                  ))}
+                <div className="absolute top-full left-0 pt-2 z-50">
+                  <div className="w-56 bg-background border border-border rounded-xl shadow-large py-2">
+                    {services.map((service) => (
+                      <Link
+                        key={service.path}
+                        to={service.path}
+                        onClick={() => setServicesOpen(false)}
+                        className={`block px-4 py-2.5 text-sm transition-smooth hover:bg-secondary hover:text-primary ${
+                          location.pathname === service.path ? "text-primary bg-secondary" : "text-muted-foreground"
+                        }`}
+                      >
+                        {service.name}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>

@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Code, CheckCircle, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import serviceImage from "@/assets/service-web-development.jpg";
 
 const WebDevelopment = () => {
   const features = [
@@ -18,13 +19,17 @@ const WebDevelopment = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       
-      <main className="pt-20">
+      <main className="pt-16">
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-primary/10 via-background to-secondary">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <div className="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-6">
-                <Code className="w-10 h-10 text-primary" />
+        <section className="relative py-20 md:py-32 overflow-hidden">
+          <div className="absolute inset-0">
+            <img src={serviceImage} alt="Web Development Services" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/60" />
+          </div>
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="max-w-2xl">
+              <div className="w-16 h-16 rounded-xl bg-primary/20 flex items-center justify-center mb-6">
+                <Code className="w-8 h-8 text-primary" />
               </div>
               <h1 className="text-4xl md:text-6xl font-display font-bold mb-6">
                 Web Development Services
@@ -64,8 +69,8 @@ const WebDevelopment = () => {
                   ))}
                 </ul>
               </div>
-              <div className="bg-gradient-to-br from-primary/20 to-secondary rounded-2xl p-8 aspect-square flex items-center justify-center">
-                <Code className="w-32 h-32 text-primary/50" />
+              <div className="rounded-2xl overflow-hidden shadow-large">
+                <img src={serviceImage} alt="Web Development" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
